@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <title>WhatsApp</title>
+  </head>
+
+  <body>
+    <div class="container bg">
+      <div class="right_side" id="side1">
+        <div class="nav-background">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" style="color: white" target="" href="#" id="back"><i class="fas fa-arrow-left"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white" href="#">Profile</a>
+            </li>
+          </ul>
+        </div>
+        <div class="profilePicture">
+
+          <img class="img-fluid rounded-circle image" width="150" height="150" src="images/dp.jpg">
+          <div class="middle">
+            <a class="dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="text_on_photo"><i class="fas fa-camera"></i><br />Change <br />Profile Photo</div>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">View photo</a>
+              <a class="dropdown-item" href="#">Take photo</a>
+              <a class="dropdown-item" href="#">Upload photo</a>
+              <a class="dropdown-item" href="#">Remove photo</a>
+            </div>
+          </div>
+        </div>
+
+        <form>
+          <div class="form-group">
+            <label for="name" class="profile-name-label">YOUR NAME</label>
+            <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="your name" value="Amit Garge">
+            <small id="nameHelp" class="form-text text-muted">This is not your username or pin. This name will be visible to your WhatsApp contacts.</small>
+          </div>
+          <div class="form-group">
+            <label for="about" class="profile-about-label">ABOUT</label>
+            <input type="text" class="form-control" id="about" placeholder="about" value="At Work">
+          </div>
+        </form>
+      </div>
+      <div id="chatInbox">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a href="#" class="navbar-brand" id="DP"><img src="images/dp.jpg" class="img-fluid rounded-circle" width="60" height="60" alt="DP">
+            </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="far fa-edit" data-toggle="tooltip" data-placement="bottom" title="Status"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-plus" data-toggle="tooltip" data-placement="bottom" title="New Chat"></i></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-ellipsis-v" data-toggle="tooltip" data-placement="bottom" title="more options..."></i>
+                  </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">New Group</a>
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Archived</a>
+                  <a class="dropdown-item" href="#">Starred</a>
+                  <a class="dropdown-item" href="#">Settings</a>
+                  <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Search for chats or contacts" aria-label="Search for chats or contacts" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">Search</span>
+          </div>
+        </div>
+        <div class="chatContacts" style="width: auto; max-height: 450px; overflow-y: auto;">
+          <ul class="list-unstyled">
+            <li class="media chats" id="chats1">
+              <img class="mr-3 align-self-center rounded-circle" width="50" height="50" src="images/OtherUserDPs/user1.jpg" alt="Generic placeholder image" id="chatInboxDP1">
+              <div class="media-body">
+                <p class="mt-0 mb-1">
+                <span class="Contactname unread-contact" id="chatInboxName1">Just the beginning</span>
+                <span class="chatInboxTime" id="chatInboxTime1">10:06PM</span>
+                </p>
+                <span class="chatInboxmessage unread-message" ><span id="InboxGroupContactName">Balaji</span>: <span id="chatInboxmessage1">Good night all!!</span></span>
+                <span class="badge badge-success badge-right">1</span>
+              </div>
+            </li>
+            <li class="media chats" id="chats2">
+              <img class="mr-3 align-self-center rounded-circle" width="50" height="50" src="images/OtherUserDPs/user2.jpg" alt="Generic placeholder image" id="chatInboxDP2">
+              <div class="media-body">
+                <p class="mt-0 mb-1">
+                <span class="Contactname unread-contact" id="chatInboxName2">Chetan Chumble</span>
+                <span class="chatInboxTime" id="chatInboxTime2">09:30PM</span>
+                </p>
+                <span class="chatInboxmessage unread-message" id="chatInboxmessage2">Hi</span>
+                <span class="badge badge-success badge-right">1</span>
+              </div>
+            </li>
+            <li class="media chats" id="chats3">
+              <img class="mr-3 align-self-center rounded-circle" width="50" height="50" src="images/OtherUserDPs/user3.jpg" alt="Generic placeholder image" id="chatInboxDP3">
+              <div class="media-body">
+                <p class="mt-0 mb-1">
+                <span class="Contactname read-contact" id="chatInboxName3">Anand Narwade</span>
+                <span class="chatInboxTime" id="chatInboxTime3">07:45PM</span>
+                </p>
+                <span class="chatInboxmessage" id="chatInboxmessage3">Aurangabad </span>
+              </div>
+            </li>
+            
+          </ul>
+          <h5 class="info">Tap and hold on a chat for more options</h5>
+        </div>
+      </div>
+ 
+    <div class="chatWindow">
+      <div class="nav-background">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" target="" href="#" id="backfromChatWindow"><i class="fas fa-arrow-left"></i></a>
+          </li>
+          <li class="nav-item">              
+            <a class="nav-link" style="color: white" href="#">Chat with <span id="chatwith"></span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-sm-5 col-4">
+          <div class="media chats-chatWindow">
+            <img class="mr-3 rounded-circle" id="chatWindContactDP" src="" width="50" height="50" alt="Generic placeholder image">
+            <div class="media-body">
+              <span class="mt-0 read-contact chatWindContactName" id="chatWindContactName"></span>
+              <p class="chatWindLastSeen">Last Seen today at 22:30</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-7 col-8">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-search" data-toggle="tooltip" data-placement="bottom" title="Search..."></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-paperclip" data-toggle="tooltip" data-placement="bottom" title="Attach"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v" data-toggle="tooltip" data-placement="bottom" title="Menu"></i></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Contact Info</a>
+                <a class="dropdown-item" href="#">Select Messages</a>
+                <a class="dropdown-item" href="#">Mute</a>
+                <a class="dropdown-item" href="#">Clear Messages</a>
+                <a class="dropdown-item" href="#">Delete Chat</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="chatBackground">
+            <p class="day"><span class="blue-bubble">TODAY</span></p>
+            <div class="talk-bubble-me tri-right right-in " id="Mymessage">
+              <div class="talktext">
+                <span id="chatWindmessageMe"><span class="GroupContactname"></span></span>
+                <span class="time text-muted" id="chatWindTimeMe"></span>
+                <span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16"   height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg>
+              </span>
+              </div>
+            </div>
+            <span class="newMessage">
+              <span class="yellow-bubble"><span class="inner-circle">1 new Message</span></span>
+            </span> 
+            <div class="talk-bubble tri-right left-top" id="OtherUserMessage">
+              <div class="talktext">
+                <p class="GroupContactname"></p>
+                <p id="chatWindmessage"></p>
+                <p class="time text-muted" id="chatWindTime">22:10</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chatTools">
+        <div class="emoji">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" id="smiley" x="3147" y="3209"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.153 11.603c.795 0 1.44-.88 1.44-1.962s-.645-1.96-1.44-1.96c-.795 0-1.44.88-1.44 1.96s.645 1.965 1.44 1.965zM5.95 12.965c-.027-.307-.132 5.218 6.062 5.55 6.066-.25 6.066-5.55 6.066-5.55-6.078 1.416-12.13 0-12.13 0zm11.362 1.108s-.67 1.96-5.05 1.96c-3.506 0-5.39-1.165-5.608-1.96 0 0 5.912 1.055 10.658 0zM11.804 1.01C5.61 1.01.978 6.034.978 12.23s4.826 10.76 11.02 10.76S23.02 18.424 23.02 12.23c0-6.197-5.02-11.22-11.216-11.22zM12 21.355c-5.273 0-9.38-3.886-9.38-9.16 0-5.272 3.94-9.547 9.214-9.547a9.548 9.548 0 0 1 9.548 9.548c0 5.272-4.11 9.16-9.382 9.16zm3.108-9.75c.795 0 1.44-.88 1.44-1.963s-.645-1.96-1.44-1.96c-.795 0-1.44.878-1.44 1.96s.645 1.963 1.44 1.963z" fill="#7d8489"/></svg>
+        </div>
+        <div class="textbox">
+          <input type="text" class="form-control form-rounded" id="message" data-toggle="tooltip" data-placement="top" title="Type your Message here" placeholder="Type a message">
+        </div>
+        <div class="circle" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="Send">
+          <i class="zmdi zmdi-mail-send"></i>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="wrapper">
+      <div class="msg-container right">
+      <p class="msg ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque neque est, viverra ac rhoncus et, cursus eu leo. Quisque in tristique libero, sed rhoncus neque. Ut at enim id ligula consequat tempus in nec magna. Donec vitae libero eget mi malesuada
+      rutrum. Integer ornare ante at ligula venenatis, quis blandit urna euismod. </p>
+    </div>
+    <div class="msg-container left">
+      <p class="msg ">Integer ornare ante at ligula venenatis, quis blandit urna euismod.</p>
+    </div>
+    <div class="msg-container right">
+      <p class="msg ">Integer ornare ante at ligula venenatis, quis blandit urna euismod.</p>
+    </div>
+    <div class="msg-container left">
+      <p class="msg ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque neque est, viverra ac rhoncus et, cursus eu leo. Quisque in tristique libero, sed rhoncus neque. Ut at enim id ligula consequat tempus in nec magna. Donec vitae libero eget
+      mi malesuada rutrum. Integer ornare ante at ligula venenatis, quis blandit urna euismod. ge</p>
+    </div>
+    <div class="msg-container right">
+      <p class="msg ">Integer ornare ante at ligula venenatis, quis blandit urna euismod.</p>
+    </div>
+    <div class="msg-container right">
+      <p class=" msg ">hello</p>
+    </div>
+    
+  </div> -->
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+
+</html>
