@@ -1,25 +1,36 @@
+    /*The js file for basic operations in index.hrml file*/
+
     $(document).ready(function(){
-      $("#side1").hide();
-      $("#default-background-image").show();
+      /*On loading the document for the first time only 'chatInbox section' is visible*/
+      $("#profileView").hide();
       $(".chatWindow").hide();
 
+      /*On clicking on profile picture in 'chatinbox view' the profile view will be visible 
+      and 'chatInbox' will disappear */
       $("#DP").click(function(){
         $("#chatInbox").fadeOut();
-        $("#side1").fadeIn();
+        $("#profileView").fadeIn();
       });
+
+      /*on clicking 'back' (<-left arrow button) from Profile view, chatInbox will be visible
+      and profileView will disappear*/
 
       $("#back").click(function() {
         $("#chatInbox").fadeIn();
-        $("#side1").fadeOut();
-
+        $("#profileView").fadeOut();
       });
+
+      /*on clicking 'back' (<-left arrow button) from chatwindow view, chatInbox will be visible
+      and chatwindow will disappear*/
+
       $("#backfromChatWindow").click(function() {
         $("#chatInbox").show();
-        $(".chatWindow").hide();      
+        $(".chatWindow").hide();   
       });
  
+      /*On clicking chat1, chat 2 or chat3 their respective infromation will be displayed
+      inside the chatWindow by hiding chatInbox*/
       $("#chats1").click(function(){
-        $("#default-background-image").hide();
         $(".talk-bubble-me").css("top","40%");
         $("#chatWindContactDP").attr("src",($("#chatInboxDP1").attr("src")));
         $("#chatWindContactName").text($("#chatInboxName1").text());
@@ -29,15 +40,14 @@
         $("#chatWindTime").text($("#chatInboxTime1").text());
         $("#chatWindTimeMe").text("08:30PM");
         $(".chatWindLastSeen").text("Anand Kale, Balaji, Chetan Chumble, Yogesh Arak");
-        
         $(".GroupContactname").text($("#InboxGroupContactName").text());
         $("#chatInbox").hide();
         $(".newMessage").show();
         $(".chatWindow").show();
       });
 
+
       $("#chats2").click(function(){
-        $("#default-background-image").hide();
         $(".talk-bubble-me").css("top","40%");
         $("#chatWindContactDP").attr("src",($("#chatInboxDP2").attr("src")));
         $("#chatWindContactName").text($("#chatInboxName2").text());
@@ -54,7 +64,6 @@
       });
       
       $("#chats3").click(function(){
-        $("#default-background-image").hide();
         $(".talk-bubble-me").css("top","50%");
         $("#chatWindContactDP").attr("src",($("#chatInboxDP3").attr("src")));
         $("#chatWindContactName").text($("#chatInboxName3").text());
@@ -68,6 +77,6 @@
         $("#chatInbox").hide();
         $(".newMessage").hide();
         $(".chatWindow").show();
-      });
-   
+      });   
     });
+    /*End of the file*/
