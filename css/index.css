@@ -355,6 +355,7 @@ p .chatInboxTime {
 .chatTools > div{
   text-align: center;
 }
+
 @media only screen and (max-width: 768px) {
   .profilePicture{
     
@@ -375,6 +376,38 @@ p .chatInboxTime {
     width: 15em;
   }
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body{
+    font-size: 0.8em;
+  }
+.profilePicture{
+    
+    margin-left: 5em;
+  }
+  .chatWindLastSeen{
+    max-width: 200px;
+  }
+  .talk-bubble {
+    left: 5%;
+    top:70%;
+  }
+  .talk-bubble-me {
+    
+    right: 5%;
+  }
+  .textbox{
+    width: 15em;
+  }
+} 
+
+
+
+
+
+
+  
+
 
   /* Scrollbars */
   ::-webkit-scrollbar {
