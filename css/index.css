@@ -17,6 +17,7 @@ html {
   max-height: 30em;
 }
 
+
 /*Chat Inbox*/
 
 .chats {
@@ -93,6 +94,9 @@ p .chatInboxTime {
 /*Chat Window Navbar part*/
 #chatwith {
   font-style: italic;
+}
+.navlinkName{
+  display: none;  
 }
 
 
@@ -394,6 +398,9 @@ a:hover {
 @media only screen and (max-width: 600px) {
   body {
     font-size: 0.9em;
+  }
+  .navlinkName{
+    display: inline-block;
   }
   .profilePicture {
     margin-left: 5em;
