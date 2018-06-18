@@ -27,7 +27,7 @@ html {
 }
 
 .chats:hover {
-  background-color: #aaaaaa;
+  background-color: #F4F5F5;
   cursor: pointer;
 }
 
@@ -37,6 +37,10 @@ p .chatInboxTime {
   font-size: 0.9em;
 }
 
+p .unread {
+  font-weight: bold;
+  color: #28A745;
+}
 .read-contact,
 .read-message,
  {
